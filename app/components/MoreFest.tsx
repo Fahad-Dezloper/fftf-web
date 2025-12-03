@@ -79,7 +79,7 @@ export default function MoreFest() {
 
   return (
     <ReactLenis root>
-      <div ref={container} className="relative h-[260vh] border-2 w-full">
+      <div ref={container} className="relative h-[260vh] w-full">
         <div className="sticky top-8 flex flex-col h-screen overflow-hidden">
            <h1 className="mb-8 text-4xl font-bold">We're more than just a food festival</h1>
            <div className="relative h-[60vh] w-full">

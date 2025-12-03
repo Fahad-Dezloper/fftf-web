@@ -2,6 +2,11 @@ import Image from "next/image";
 import TopBar from "./components/TopBar";
 import HeroSection from "./components/HeroSection";
 import MoreFest from "./components/MoreFest";
+import PastFests from "./components/PastFests";
+import CulinaryShowcase from "./components/CulinaryShowcase";
+import SpeakerShowcase from "./components/SpeakerShowcase";
+import SponsorsShowcase from "./components/SponsorsShowcase";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -24,30 +29,25 @@ export default function Home() {
       <MoreFest />
     </div>
 
-    <div className="w-full h-[30vh] bg-pink-300">
-    <h1 className="text-2xl font-bold">What’s Happening This Year & what you have missed</h1>
-    <span>All last year highlights here in circles for each each year plus silkhq  sidebar or bottom bar</span>
+    <div className="w-full h-fit">
+    <PastFests />
     </div>
 
-    {/* <div className="w-full h-[30vh] bg-gray-300">
-    <h1 className="text-2xl font-bold">Culinary Showcase</h1>
-    <span>Chef demos</span>
-    </div> */}
-
-    {/* <div className="w-full h-[30vh] bg-orange-300">
-    <h1 className="text-2xl font-bold">Celebrity Guests</h1>
-    <span>Celebrity Guests</span>
-    </div> */}
-
-    {/* <div className="w-full h-[30vh] bg-teal-200">
-    <h1 className="text-2xl font-bold">Testimonials & media coverage</h1>
-    <span>Social proof.</span>
+    <div className="w-full h-fit">
+    <CulinaryShowcase />
     </div>
 
-    <div className="w-full h-[30vh] bg-fuchsia-300">
-    <h1 className="text-2xl font-bold">Footer</h1>
-    <span>Footer</span>
-    </div> */}
+    <div className="w-full h-[80vh]">
+    <SpeakerShowcase />
+    </div>
+
+    <div className="w-full h-[30vh]">
+    <SponsorsShowcase />
+    </div>
+
+    <div className="w-full h-[50vh] rounded-t-4xl bg-[#F1E9DD]">
+    <Footer />
+    </div>
 
 
     </div>
